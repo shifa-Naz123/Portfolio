@@ -3,9 +3,6 @@
 
 Welcome to my portfolio website! This is a simple and responsive personal portfolio built using HTML, CSS, and JavaScript.
 
-## 🖥️ Live Demo
-[Click here to view the live demo](#) *(Replace # with your actual link)*
-
 ## 📌 Features
 - Responsive Design
 - Smooth Scrolling
