@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img id="namelogo" src="images/namelogo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li>🌐</li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text"></div>
+        <p>Web Developer</p>
+        <h1>Hi, I'am <span>Shifa</span><br> From India</h1>
+    </div>
+</div>
+<!-- ----about-----> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img id='aboutimg'src="images/backgroun2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Myself Shifa Naz.</p>
+                <p>I'am a student currently pursuing my bacherlors degree in Computer Science & Engineering. I'am an aspiring Developer. My skills include HTML,CSS,JavaScript & Python. I'am enthusiastic about exploring & learning new technology.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Developing Web/App interfaces.</li>
+                        <li><span>Programming & DSA</span><br>Coding with OOPs like Python & C++.</li>
+                        <li><span>ML/Data Analytics</span><br>Analysing datasets & predicting/simulating outcomes.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Intern.</span><br>Actively seeking internship.</li>
+                        <li><span>Built Web projects.</span><br>Visualize Automata.</li>
+                        <li><span>Developed ML/Data Analytics projects</span><br>Gesture control system,Voice assistant(JARVIS),analysed datasets & simulate model.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.E. in CS&E</span><br>from JNN College of Engineering.</li>
+                        <li><span>Senior Secondary Schooling</span><br>SAFE Institute.</li>
+                        <li><span>Schooling</span><br>SHEHPS.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------services----> 
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <img id="s1" src="images/skills3.png">
+            <h2>Web Design</h2>
+            <p>Building of interactives, responsive & seamless Web applications & rendering them.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <img id="s2" src="images/work3.png">
+            <h2>Data Analytics</h2>
+            <p>Building of interactives, responsive & seamless Web applications & rendering them.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <img id="s3" src="images/skills1.png">
+            <h2>ML</h2>
+            <p>Building of interactives, responsive & seamless Web applications & rendering them.</p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- -------contact------ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>0123456789</p>
+                <p>Message<br></p>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Name" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+ </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+
+</body>
+</html>
