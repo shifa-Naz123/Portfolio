@@ -33,5 +33,5 @@ Simply open `index.html` in your browser to view the website.
 ## 📧 Contact
 Feel free to reach out if you have any questions or suggestions!
 
-📩 Email: contact@example.com *(Replace with your actual email)*
+📩 Email: contact@example.com 
 
